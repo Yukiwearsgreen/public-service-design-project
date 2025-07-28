@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Zharfā Case Detail - Expanded Modal</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/main.css" />
+  </head>
+  <body>
+    <header
+      class="header d-flex align-items-center justify-content-between flex-wrap px-3"
+    >
+      <div class="d-flex align-items-center flex-shrink-0 mb-2 mb-md-0">
+        <button
+          class="btn btn-outline-dark d-md-none me-3"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mySidebar"
+          aria-controls="mySidebar"
+          aria-expanded="false"
+          aria-label="Toggle sidebar"
+        >
+          ☰
+        </button>
+        <h1 class="m-0">ZHARFĀ</h1>
+      </div>
+
+      <form
+        class="d-flex flex-grow-1 mx-3 header-search"
+        role="search"
+        onsubmit="event.preventDefault()"
+      >
+        <input
+          class="form-control"
+          type="search"
+          placeholder="Search..."
+          aria-label="Search"
+        />
+        <button class="btn btn-outline-dark ms-2" type="submit">Search</button>
+      </form>
+      <div class="d-flex align-items-center header-auth gap-2 mb-2 mb-md-0">
+        <button class="btn btn-outline-dark">Login</button>
+        <button class="btn btn-dark">Sign Up</button>
+      </div>
+    </header>
+    <div class="d-flex">
+      <div
+        id="mySidebar"
+        class="collapse d-md-flex flex-column flex-shrink-0 py-3"
+      >
+        <ul class="nav nav-pills flex-column mb-auto px-3">
+          <li class="nav-item">
+            <img src="assets/pics/icons8-home-50.png" alt="home image" />
+            <a
+              href="index.html"
+              class="nav-link link-body-emphasis"
+              aria-current="page"
+            >
+              Home
+            </a>
+          </li>
+          <li class="nav-item">
+            <img src="assets/pics/icons8-folder-50.png" alt="cases image" />
+            <a href="#" class="nav-link link-body-emphasis"> Cases </a>
+          </li>
+          <li class="nav-item">
+            <img
+              src="assets/pics/icons8-person-64.png"
+              alt="child profile image"
+            />
+            <a href="#" class="nav-link link-body-emphasis"> Child Profiles </a>
+          </li>
+          <li class="nav-item">
+            <img
+              src="assets/pics/icons8-chat-50.png"
+              alt="dialogue room image"
+            />
+            <a href="#" class="nav-link link-body-emphasis"> Dialogue Rooms </a>
+          </li>
+          <li class="nav-item">
+            <img src="assets/pics/icons8-report-50.png" alt="reports image" />
+            <a href="#" class="nav-link link-body-emphasis"> Reports & Logs </a>
+          </li>
+          <li class="nav-item">
+            <img
+              src="assets/pics/icons8-bar-chart-48.png"
+              alt="statistics image"
+            />
+            <a href="#" class="nav-link link-body-emphasis"> Statistics </a>
+          </li>
+          <li class="nav-item">
+            <img
+              src="assets/pics/icons8-privacy-policy-48.png"
+              alt="Confidential access image"
+            />
+            <a href="#" class="nav-link link-body-emphasis">
+              Confidential Access
+            </a>
+          </li>
+        </ul>
+      </div>
+      <main class="flex-grow-1 p-4">
+        <div class="card p-4">
+          <h2 class="mb-4">Case Detail: Ana S. | 9</h2>
+
+          <!-- Tabs nav -->
+          <ul class="nav nav-tabs" id="caseTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link active text-dark"
+                id="overview-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#overview"
+                type="button"
+                role="tab"
+                aria-controls="overview"
+                aria-selected="true"
+              >
+                Overview
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link text-dark"
+                id="logs-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#logs"
+                type="button"
+                role="tab"
+                aria-controls="logs"
+                aria-selected="false"
+              >
+                Logs
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link text-dark"
+                id="school-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#school"
+                type="button"
+                role="tab"
+                aria-controls="school"
+                aria-selected="false"
+              >
+                School Reports
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link text-dark"
+                id="parent-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#parent"
+                type="button"
+                role="tab"
+                aria-controls="parent"
+                aria-selected="false"
+              >
+                Parent Contact
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link text-dark"
+                id="history-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#history"
+                type="button"
+                role="tab"
+                aria-controls="history"
+                aria-selected="false"
+              >
+                Action History
+              </button>
+            </li>
+          </ul>
+          <div class="tab-content mt-3" id="caseTabContent">
+            <div
+              class="tab-pane fade show active"
+              id="overview"
+              role="tabpanel"
+              aria-labelledby="overview-tab"
+            >
+              <p>
+                <strong>Emotional Alert:</strong> Recent artwork are dark skies
+                and two homes which symbolize Ana’s emotional state.
+              </p>
+              <p>
+                <strong>School Counselor Log:</strong> Withdrawn behavior,
+                reluctant to speak.
+              </p>
+              <p><strong>Attendance:</strong> Dropped over last week.</p>
+              <p>
+                <strong>Home Situation:</strong> Parental conflict suspected,
+                ongoing arguments.
+              </p>
+              <div class="alert alert-warning" role="alert">
+                Emotional Alert triggered 3 times in past 30 days.<br />
+                Suggested Action: Gentle intervention via Dialogue Room.
+              </div>
+            </div>
+
+            <div
+              class="tab-pane fade"
+              id="logs"
+              role="tabpanel"
+              aria-labelledby="logs-tab"
+            >
+              <div class="scroll-box">
+                2025-07-10 09:14 - Teacher reported Ana isolating herself.<br />
+                2025-07-15 10:07 - School counselor session notes: Ana quiet, no
+                eye contact. Her hesitation to open up indicates a possible fear
+                or mistrust of adults, likely shaped by her home environment.<br />
+                2025-07-25 15:24 - Social worker Nina flagged case due to
+                emotional alert.<br />
+                2025-07-23 1:43 - The irregular attendance is contributing to
+                her falling academic performance and further isolating her
+                socially, making timely intervention all the more critical.
+                <br />
+                2025-07-26 11:55 - Dialogue Room session scheduled with parents
+                on 29th of this moth.<br />
+                2025-07-27 14:06 - Follow-up notes: Parents defensive, limited
+                progress.<br />
+                2025-07-28 13:17 - A detailed report of the session and ongoing
+                concerns was submitted to the family court for consideration in
+                custody or guardianship decisions. <br />
+                2025-08-01 08:59 - Nina reports check-in with Ana. <br />
+              </div>
+            </div>
+
+            <!-- School Reports -->
+            <div
+              class="tab-pane fade"
+              id="school"
+              role="tabpanel"
+              aria-labelledby="school-tab"
+            >
+              <div class="scroll-box">
+                <strong>School Report #1:</strong><br />
+                Over the course of the semester, Ana’s grades have dropped by
+                15%, a significant decline that teachers attribute to her
+                decreased participation and concentration. <br />
+                This drop reflects not only academic difficulties but also the
+                emotional distraction caused by her home life.
+                <br />
+                <strong>School Report #2:</strong><br />
+                Teachers have observed signs of withdrawal and anxiety in Ana’s
+                behavior during class. <br />
+                She frequently seems distracted, nervous, and hesitant to
+                engage, which further impacts her learning and social
+                integration.<br />
+              </div>
+            </div>
+
+            <!-- Parent Contact -->
+            <div
+              class="tab-pane fade"
+              id="parent"
+              role="tabpanel"
+              aria-labelledby="parent-tab"
+            >
+              <div class="scroll-box">
+                <strong>Mother:</strong> Contacted on 2025-07-23, the mother
+                expressed resistance toward social worker involvement, possibly
+                due to distrust or feeling judged. This has made it challenging
+                to gain her cooperation, but ongoing engagement efforts
+                continue. <br />
+
+                <strong>Father:</strong>Father: Contacted on 2025-07-24, the
+                father showed more openness and agreed to attend the Dialogue
+                Room session, signaling a potential avenue for constructive
+                family dialogue. <br />
+
+                Efforts are underway to foster cooperative communication between
+                the parents, despite the difficulties, to create a more
+                supportive environment for Ana. <br />
+              </div>
+            </div>
+
+            <!-- Action History -->
+            <div
+              class="tab-pane fade"
+              id="history"
+              role="tabpanel"
+              aria-labelledby="history-tab"
+            >
+              <div class="scroll-box">
+                2025-07-9: Case created in ZHARFĀ system.<br />
+                2025-07-25: Emotional alert triggered; social worker
+                assigned.<br />
+                2025-07-26: Dialogue Room session held.<br />
+                2025-07-28: Report sent to family court.<br />
+                2025-07-29: Ongoing monitoring and follow-ups.<br />
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,89 @@
+body {
+  background-color: rgb(234, 223, 208);
+  height: 100vh;
+  margin: 0;
+  font-family: sans-serif;
+}
+.header {
+  border-bottom: 2px solid black;
+  padding: 0.5rem 1rem;
+}
+/* Sidebar styling */
+#mySidebar {
+  width: max-content;
+  min-width: 200px;
+}
+/* Align icon and text in nav items */
+.nav-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+.nav-item img {
+  height: 20px;
+  margin-right: 8px;
+}
+/* Adjust sidebar on small devices */
+@media (max-width: 767.98px) {
+  #mySidebar {
+    position: fixed;
+    top: 56px; /* header height */
+    left: 0;
+    height: calc(100vh - 56px);
+    background: rgb(255 255 255 / 0.95);
+    padding-top: 1rem;
+    overflow-y: auto;
+    z-index: 1045;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  }
+  /* Search bar full width on mobile */
+  .header-search {
+    flex-grow: 1;
+    margin: 0 1rem;
+  }
+  /* Login/signin stack on mobile */
+  .header-auth {
+    margin-left: 1rem;
+  }
+
+  /* Modal like content styling */
+  .card {
+    background: white;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
+    max-width: 1000px;
+    margin: 2rem 0;
+  }
+
+  .nav-tabs .nav-link {
+    font-weight: 600;
+    font-size: 1.05rem;
+    color: #2c3e50;
+  }
+  .nav-tabs .nav-link.active {
+    color: #529f63;
+    border-color: #529f63 #529f63 transparent;
+  }
+
+  .tab-content > .tab-pane {
+    padding-top: 1rem;
+    color: #2c3e50;
+    font-size: 1rem;
+  }
+}
+
+/* scroll-box fills available space and scrolls */
+.tab-pane .scroll-box {
+  flex-grow: 1;
+  max-height: 250px; /* fixed height for scroll */
+  overflow-y: auto;
+  background: #f8f7f5;
+  padding: 1rem;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  white-space: pre-wrap;
+  font-family: monospace, monospace;
+  font-size: 0.9rem;
+  box-sizing: border-box;
+}

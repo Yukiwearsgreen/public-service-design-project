@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ZHARFĀ</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/main.css" />
+  </head>
+  <body>
+    <header class="header py-2 px-3">
+      <div class="container-fluid">
+        <div class="row align-items-center">
+          <div
+            class="col-12 col-md-auto d-flex align-items-center mb-2 mb-md-0"
+          >
+            <button
+              class="btn btn-outline-dark d-md-none me-3"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#mySidebar"
+              aria-controls="mySidebar"
+              aria-expanded="false"
+              aria-label="Toggle sidebar"
+            >
+              ☰
+            </button>
+            <h1 class="m-0">ZHARFĀ</h1>
+          </div>
+          <div class="col-12 col-md-auto flex-grow-1 mb-2 mb-md-0">
+            <form
+              class="d-flex"
+              role="search"
+              onsubmit="event.preventDefault()"
+            >
+              <input
+                class="form-control"
+                type="search"
+                placeholder="Search..."
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-dark ms-2" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
+          <div
+            class="col-12 col-md-auto d-flex justify-content-center justify-content-md-end gap-2"
+          >
+            <button class="btn btn-outline-dark">Login</button>
+            <button class="btn btn-dark">Sign Up</button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="d-flex">
+      <div
+        id="mySidebar"
+        class="collapse d-md-flex flex-column flex-shrink-0 py-3"
+      >
+        <ul class="nav nav-pills flex-column mb-auto px-3">
+          <li class="nav-item">
+            <img src="assets/pics/icons8-home-50.png" alt="home image" />
+            <a
+              href="index.html"
+              class="nav-link link-body-emphasis"
+              aria-current="page"
+            >
+              Home
+            </a>
+          </li>
+          <li class="nav-item">
+            <img src="assets/pics/icons8-folder-50.png" alt="cases image" />
+            <a href="#" class="nav-link link-body-emphasis"> Cases </a>
+          </li>
+          <li class="nav-item">
+            <img
+              src="assets/pics/icons8-person-64.png"
+              alt="child profile image"
+            />
+            <a href="#" class="nav-link link-body-emphasis"> Child Profiles </a>
+          </li>
+          <li class="nav-item">
+            <img
+              src="assets/pics/icons8-chat-50.png"
+              alt="dialogue room image"
+            />
+            <a href="#" class="nav-link link-body-emphasis"> Dialogue Rooms </a>
+          </li>
+          <li class="nav-item">
+            <img src="assets/pics/icons8-report-50.png" alt="reports image" />
+            <a href="#" class="nav-link link-body-emphasis"> Reports & Logs </a>
+          </li>
+          <li class="nav-item">
+            <img
+              src="assets/pics/icons8-bar-chart-48.png"
+              alt="statistics image"
+            />
+            <a href="#" class="nav-link link-body-emphasis"> Statistics </a>
+          </li>
+          <li class="nav-item">
+            <img
+              src="assets/pics/icons8-privacy-policy-48.png"
+              alt="Confidential access image"
+            />
+            <a href="#" class="nav-link link-body-emphasis">
+              Confidential Access
+            </a>
+          </li>
+        </ul>
+      </div>
+      <main class="flex-grow-1 p-4">
+        <h2>Active Child Cases</h2>
+        <div class="card text-center">
+          <div class="card-header">
+            <ul class="nav nav-pills card-header-pills">
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="#">Dialogue Room</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="#">Refer</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="#">Add Note</a>
+              </li>
+            </ul>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">
+              Name: Ana S. | Age: 9 | School: X Elementary
+            </h5>
+            <p class="card-text">
+              Status: Flagged by school system
+              <br />Last Activity: Teacher noted changes in behavior <br />Risk
+              Level: Medium
+            </p>
+            <a href="ana case.html" class="btn btn-outline-dark">View Case</a>
+          </div>
+        </div>
+        <div class="card text-center mt-3">
+          <div class="card-header">
+            <ul class="nav nav-pills card-header-pills">
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="#">Dialogue Room</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="#">Refer</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="#">Add Note</a>
+              </li>
+            </ul>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Name: Amin T. | Age: 13 | School: X High</h5>
+            <p class="card-text">
+              Status: Flagged by welfare department
+              <br />Last Activity: Therapist logged observations <br />Risk
+              Level: High
+            </p>
+            <a
+              href="#"
+              class="btn disabled btn-outline-dark"
+              aria-disabled="true"
+              >View Case</a
+            >
+          </div>
+        </div>
+      </main>
+    </div>
+    <div class="container">
+      <footer
+        class="d-flex flex-wrap justify-content-center align-items-center py-3 mt-4"
+      >
+        <div class="col-md-4 d-flex align-items-center jus">
+          <span class="mb-3 mb-md-0 text-dark"
+            >© ZHARFĀ 2025 | Confidential & Secure</span
+          >
+        </div>
+      </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
